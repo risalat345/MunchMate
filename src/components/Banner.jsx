@@ -13,7 +13,7 @@ const Banner = () => {
   const text1 = ["Your", "Favorite", "Food"];
   const text2 = ["Just", "A", "Tap", "Away!"];
   return (
-    <div className="relative w-full mt-20">
+    <div id="#home" className="relative w-full mt-20">
       <img src={banner} alt="Banner" className="w-full h-auto rounded-lg" />
       <div className="absolute top-2 left-36 md:top-16 md:left-90 text-center">
         <div className="flex space-x-1.5 md:space-x-3">

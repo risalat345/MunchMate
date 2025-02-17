@@ -29,7 +29,7 @@ const Navbar = ({ setshowSignIn }) => {
         </div>
         <div className='hidden md:block'>
           <ul className="flex nav-menu gap-5 items-center">
-            <Link to="/" onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>Home</Link>
+            <Link to="/MunchMate" onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>Home</Link>
             <a href='#menu' onClick={() => setMenu("menu")} className={menu === "menu" ? "active" : ""}>Menu</a>
             <a href='#app' onClick={() => setMenu("mobile-app")} className={menu === "mobile-app" ? "active" : ""}>Mobile App</a>
             <a href='#contact' onClick={() => setMenu("contact")} className={menu === "contact" ? "active" : ""}>Contact Us</a>
@@ -61,7 +61,7 @@ const Navbar = ({ setshowSignIn }) => {
       {isMobileMenuOpen && (
         <div className="absolute top-14 left-0 w-full bg-white shadow-md p-5 flex flex-col items-center md:hidden">
           <ul className="flex flex-col gap-4 justify-center items-center">
-            <Link to="/" onClick={() => { setMenu("home"); setIsMobileMenuOpen(false); }}>Home</Link>
+            <Link to="/MunchMate" onClick={() => { setMenu("home"); setIsMobileMenuOpen(false); }}>Home</Link>
             <a href='#menu' onClick={() => { setMenu("menu"); setIsMobileMenuOpen(false); }}>Menu</a>
             <a href='#app' onClick={() => { setMenu("mobile-app"); setIsMobileMenuOpen(false); }}>Mobile App</a>
             <a href='#contact' onClick={() => { setMenu("contact"); setIsMobileMenuOpen(false); }}>Contact Us</a>
