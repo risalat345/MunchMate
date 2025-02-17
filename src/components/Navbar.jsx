@@ -2,7 +2,6 @@ import React, { useContext, useState } from 'react';
 import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import { StoreContext } from '../context/StoreContext';
-
 const Navbar = ({ setshowSignIn }) => {
   const [menu, setMenu] = useState("home");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -10,9 +9,7 @@ const Navbar = ({ setshowSignIn }) => {
   return (
     <div className="navbar fixed top-0 left-0 w-full bg-white shadow-md z-50">
       <nav className="flex justify-between items-center py-2 px-5 relative">
-        {/* Hamburger menu */}
         {getTotalAmmount()===0?"":<div className=" absolute right-30 top-3 red h-2 w-2 bg-red-600 rounded-full">
-
 </div>}
         <div className="block md:hidden">
           {isMobileMenuOpen ? (
@@ -30,8 +27,6 @@ const Navbar = ({ setshowSignIn }) => {
         <div className='mb-2'>
           <img width={150} src={logo} alt="Logo" />
         </div>
-        
-        {/* Desktop Navigation */}
         <div className='hidden md:block'>
           <ul className="flex nav-menu gap-5 items-center">
             <Link to="/" onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>Home</Link>
