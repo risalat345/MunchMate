@@ -6,7 +6,7 @@ const Menu = ({ category, setcategory }) => {
     <div id="menu" className="flex flex-col items-center">
       {/* Header Section */}
       <div className="text-center">
-        <h1 className="text-2xl font-bold">Explore Our Menu</h1>
+        <h1 className="text-2xl font-bold my-2">Explore Our Menu</h1>
         <p className="text-sm w-2/3 mx-auto">
           Choose from a diverse menu featuring a delectable array of dishes. Our
           mission is to satisfy your cravings and elevate your dining experience,

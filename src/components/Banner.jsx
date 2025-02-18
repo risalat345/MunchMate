@@ -14,7 +14,7 @@ const Banner = () => {
   const text2 = ["Just", "A", "Tap", "Away!"];
   return (
     <div id="#home" className="relative w-full mt-20">
-      <img src={banner} alt="Banner" className="w-full h-auto rounded-lg" />
+      <img src={banner} alt="Banner" className="w-full h-fit rounded-lg" />
       <div className="absolute top-2 left-36 md:top-16 md:left-90 text-center">
         <div className="flex space-x-1.5 md:space-x-3">
           {text1.map((word, i) => (
