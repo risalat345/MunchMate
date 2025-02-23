@@ -31,15 +31,14 @@ const PlaceOrder = () => {
           </div>
           <hr />
           
-          <div className='flex w-full justify-between py-2 px-2'>
-            <p>Delievery Fee</p>
-            <p>{2}$</p>
+          <div className='flex justify-between py-2 px-2'>
+            <p>Delivery Fee</p>
+            <p>${getTotalAmmount() === 0 ? 0 : 2}</p>
           </div>
           <hr />
-          
-          <div className='flex w-full justify-between py-2 px-2 font-bold'>
+          <div className='flex justify-between py-2 px-2 font-bold'>
             <p>Total</p>
-            <p>{getTotalAmmount()+2}$</p>
+            <p>${getTotalAmmount() === 0 ? 0 : getTotalAmmount() + 2}</p>
           </div>
           <hr />
           <br />
