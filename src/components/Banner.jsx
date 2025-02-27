@@ -15,7 +15,7 @@ const Banner = () => {
   const text2 = ["Just", "A", "Tap", "Away!"];
 
   return (
-    <div id="#home" className="bg-orange-600 w-full mt-20 h-fit md:flex rounded-lg">
+    <div id="home" className="bg-orange-600 w-full mt-20 h-fit md:flex rounded-lg">
       {/* Left Side */}
       <div className="left md:w-6/12 flex justify-center items-center">
         <img

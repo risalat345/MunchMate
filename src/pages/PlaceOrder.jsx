@@ -38,7 +38,7 @@ const PlaceOrder = () => {
           <hr />
           <div className='flex justify-between py-2 px-2 font-bold'>
             <p>Total</p>
-            <p>${getTotalAmmount() === 0 ? 0 : getTotalAmmount() + 2}</p>
+            <p>${getTotalAmmount() === 0 ? 0 : getTotalAmmount()+2}</p>
           </div>
           <hr />
           <br />

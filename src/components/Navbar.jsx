@@ -29,7 +29,7 @@ const Navbar = ({ setshowSignIn }) => {
         </div>
         <div className='hidden md:block'>
           <ul className="flex nav-menu gap-5 items-center">
-            <Link to="/MunchMate" onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>Home</Link>
+            <a href="#home" onClick={() => setMenu("home")} className={menu === "home" ? "active" : ""}>Home</a>
             <a href='#menu' onClick={() => setMenu("menu")} className={menu === "menu" ? "active" : ""}>Menu</a>
             <a href='#app' onClick={() => setMenu("mobile-app")} className={menu === "mobile-app" ? "active" : ""}>Mobile App</a>
             <a href='#contact' onClick={() => setMenu("contact")} className={menu === "contact" ? "active" : ""}>Contact Us</a>
